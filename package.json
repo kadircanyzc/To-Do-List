@@ -2,7 +2,7 @@
   "name": "proje_firebase",
   "homepage": "https://kadircanyzc.github.io/to-do-list",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
