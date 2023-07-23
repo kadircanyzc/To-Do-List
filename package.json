@@ -1,5 +1,6 @@
 {
   "name": "proje_firebase",
+  "homepage": "https://kadircanyzc.github.io/to-do-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,6 +31,8 @@
     "yup": "^1.0.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -52,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
