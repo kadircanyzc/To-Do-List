@@ -1,5 +1,5 @@
 import TabsPages from "./components/TabsPages";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Dashboard from "./components/Dashboard";
 import Profile from "./components/Pages/Profile";
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Routes>
           <Route
             exact
@@ -60,7 +60,7 @@ function App() {
           />
           <Route exact path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
